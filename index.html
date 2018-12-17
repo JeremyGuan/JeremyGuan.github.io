@@ -1,23 +1,28 @@
-<!DOCTYPE html>  
+<!DOCTYPE html>
 <html>
-   <head>  
-      <meta http-equiv='X-UA-Compatible' content='IE=edge' />  
-      <title>Hello World</title>  
-  
-      <script id='sap-ui-bootstrap' 
-           src='https://openui5.hana.ondemand.com/resources/sap-ui-core.js'
-           data-sap-ui-theme='sap_belize'  
-           data-sap-ui-libs='sap.m'></script>   
-  
-      <script>  
-         var btn = new sap.m.Button({  
-            text:'Hello World',  
-            press:function(){alert('Hello!');}  
-         });  
-         btn.placeAt('content');  
+   <head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta charset="utf-8">
+      <title>Walkthrough</title>
+      <script
+         id="sap-ui-bootstrap"
+         src="/js/sap-ui-core.js"
+         data-sap-ui-theme="sap_belize"
+         data-sap-ui-libs="sap.m"
+         data-sap-ui-compatVersion="edge"
+         data-sap-ui-preload="async"
+         data-sap-ui-resourceroots='{
+            "sap.ui.demo.walkthrough": "./"
+         }' >
       </script>
-
+      <script>
+         sap.ui.getCore().attachInit(function () {
+            sap.ui.xmlview({
+               viewName : "sap.ui.demo.walkthrough.view.App"
+            }).placeAt("content");
+         });
+      </script>
    </head>
-   <body id='content' class='sapUiBody'>
+   <body class="sapUiBody" id="content">
    </body>
 </html>
