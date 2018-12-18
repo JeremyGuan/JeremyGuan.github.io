@@ -6,21 +6,21 @@ sap.ui.define([
 ], function (Controller, MessageToast, JSONModel, ResourceModel) {
    "use strict";
    return Controller.extend("sap.ui.demo.walkthrough.controller.App", {
-      onInit: function() {
-      	var oData = {
-      		recipient:{
-      			name: "JeremyGuan"
-      		}
-      	};
-      	var oModel = new JSONModel(oData);
-      	this.getView().setModel(oModel);
+      // onInit: function() {
+      // 	var oData = {
+      // 		recipient:{
+      // 			name: "JeremyGuan"
+      // 		}
+      // 	};
+      // 	var oModel = new JSONModel(oData);
+      // 	this.getView().setModel(oModel);
 
-      	var i18nModel = new ResourceModel({
-      		bundleName:"sap.ui.demo.walkthrough.i18n.i18n"
-      	});
-      	this.getView().setModel(i18nModel,"i18n");
+      // 	var i18nModel = new ResourceModel({
+      // 		bundleName:"sap.ui.demo.walkthrough.i18n.i18n"
+      // 	});
+      // 	this.getView().setModel(i18nModel,"i18n");
 
-      },
+      // },
 
       onShowHello : function () {
          // show a native JavaScript alert

@@ -17,8 +17,14 @@
       </script>
       <script>
          sap.ui.getCore().attachInit(function () {
-            sap.ui.xmlview({
-               viewName : "sap.ui.demo.walkthrough.view.App"
+            new sap.ui.core.ComponentContainer(
+               name:"sap.ui.demo.walkthrough",
+               settings:{
+                  id : "walkthrough"
+               }
+
+            // sap.ui.xmlview({
+            //    viewName : "sap.ui.demo.walkthrough.view.App"
             }).placeAt("content");
          });
       </script>
