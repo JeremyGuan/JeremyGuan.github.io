@@ -11,4 +11,14 @@
 		valueLiveUpdate="true"
 		width="60%"
     	/>
+	<l:VerticalLayout
+		class="sapUiContentPadding"
+		width="100%">
+		<l:content>
+			<Link
+				text="SAPLink"
+				target="_blank"
+				href="https://github.com/JeremyGuan/SAPLink-plugins/blob/master/install/zsaplink_installer.txt" />
+		</l:content>
+	</l:VerticalLayout>    	
 </mvc:View>
