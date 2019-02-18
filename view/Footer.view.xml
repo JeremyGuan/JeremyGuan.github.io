@@ -1,0 +1,11 @@
+<mvc:View
+	controllerName = "jeremy.controller.Footer"
+	xmlns = "sap.m"
+	xmlns:mvc = "sap.ui.core.mvc">
+
+			
+			<Button id = "Home"  text="Home" press = "handleHomeHome" />
+			<Button id = "weChat" text="WeChat"  press = "handleHomeWeChat"/>								
+			<Button id = "aboutUs" text="Contact Us" press="handleHomeAboutUs"/>
+
+</mvc:View>

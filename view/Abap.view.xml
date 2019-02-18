@@ -1,0 +1,74 @@
+<mvc:XMLView
+	    controllerName="jeremy.controller.Abap"
+	    xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+		xmlns="sap.m"
+		xmlns:mvc="sap.ui.core.mvc"
+>	
+	
+	<App>
+	<pages>
+	<Page showHeader = "false">
+	<SplitApp id="SplitAppABAP" initialDetail="initialPage" initialMaster="master" orientationChange="onOrientationChange">
+		<detailPages>
+
+			<Page id = "initialPage" class="sapUiStdPage">
+				<content>
+					<mvc:XMLView viewName = "jeremy.view.details.Welcome"></mvc:XMLView>
+				</content>			
+			</Page>
+			
+			<Page id = "Install_saplink" class="sapUiStdPage">
+				<content>
+					<mvc:XMLView viewName = "jeremy.view.details.Install_saplink"></mvc:XMLView>
+				</content>			
+			</Page>
+						
+			<Page id = "Download_and_upload_abap_code" class="sapUiStdPage" >
+				<content>				
+					<mvc:XMLView viewName = "jeremy.view.details.Download_and_upload_abap_code"></mvc:XMLView>
+				</content>			
+			</Page>
+			
+		</detailPages>
+		
+		
+		<masterPages>
+			<Page id="master" title="ABAP" icon="sap-icon://action" class="sapUiStdPage">
+				<content>
+					<List items="{abap>/master}">
+						<items>
+							<StandardListItem title="{abap>title}" type="Navigation" press="onPressGoToMaster"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+			
+			<Page id="master2" title="{title>/title}" icon="sap-icon://action" class="sapUiStdPage" showNavButton="true"
+					navButtonPress="onPressMasterBack">
+				<content>
+					<List itemPress="onListItemPress" items="{item>/catalog}">
+						<items>
+							<StandardListItem title="{item>title}" type="Active" custom:to="{item>to}"/>
+						</items>
+					</List>
+				</content>
+			</Page>
+		</masterPages>
+
+	</SplitApp>
+	
+	<footer>
+		<Toolbar>
+				
+			<content>	
+				<mvc:XMLView viewName="jeremy.view.Footer" />				
+			</content>						
+		</Toolbar>
+	</footer>
+		
+		
+	</Page>	
+	</pages>	
+	</App>
+	
+</mvc:XMLView>

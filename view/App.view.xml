@@ -1,18 +1,11 @@
 <mvc:View
-   controllerName="sap.ui.demo.walkthrough.controller.App"
-   xmlns="sap.m"
-   xmlns:mvc="sap.ui.core.mvc">
-   <Text text="Hello World"/>
-   <Button text="{i18n>showHelloButtonText}"
-           press = "onShowHello" />
-    <Input
-		value="{/recipient/name}"
-		description="Hello {recipient/name}"
-		valueLiveUpdate="true"
-		width="60%"
-    	/>
-	<Link
-		text="SAPLink"
-		target="_blank"
-		href="https://github.com/JeremyGuan/SAPLink-plugins/blob/master/install/zsaplink_installer.txt" />   	
+	controllerName = "jeremy.controller.App"
+	xmlns = "sap.m"
+	xmlns:mvc = "sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	displayBlock="true">
+	<Shell>	
+		<App id = "app">
+		</App>
+	</Shell>
 </mvc:View>

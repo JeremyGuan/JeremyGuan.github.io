@@ -1,0 +1,9 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m">
+	
+	<Button
+		text = "hello  222"
+	></Button>
+
+</mvc:View>

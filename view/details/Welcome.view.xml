@@ -1,0 +1,10 @@
+<mvc:View
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m">
+	
+	<Text class="sapUiSmallMargin"
+		text = "Welcome"
+		textAlign = "End"
+	></Text>
+
+</mvc:View>

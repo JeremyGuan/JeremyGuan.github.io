@@ -1,0 +1,23 @@
+<mvc:View	
+    controllerName="jeremy.controller.Details"
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m">
+    	
+	<Page id = "Install_saplink" class="sapUiStdPage">
+		<content>
+					<Label text="Detail page 1" />
+					<Button text="Go to Detail page2" press="onPressNavToDetail" />			
+		</content>
+	</Page>
+	
+	<Page id = "Download_and_upload_abap_code" class="sapUiStdPage" >
+		<content>
+			<Label text="Detail page 3333333333333" />
+			<mvc:View viewName = "jeremy.view.details.Download_and_upload_abap_code"/>
+			
+		</content>
+	
+	</Page>
+	
+    
+</mvc:View>
