@@ -39,7 +39,10 @@
 				"viewPath": "jeremy.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
-				"async": true
+				"transition": "flip",
+				"bypassed":{
+					"target": "notFound"},
+				"async": true				
 			},
 			"routes":[
 				{
@@ -62,7 +65,12 @@
 				"abap":{
 					"viewID" : "abap",
 					"viewName" : "Abap"
-				}
+				},
+				"notFound":{
+					"viewId" : "notFound",
+					"viewName" : "NotFound",
+					"transition" : "show"
+					}
 					
 			}		
 		},					
